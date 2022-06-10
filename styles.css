@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(0, 111, 158);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    letter-spacing: 2px;
+    width: 100vw;
+}
+
+header h1 {
+    padding: 20px;
+}
+.container {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction h2 {
+    margin: 0 auto;
+    padding-top: 2rem;
+    max-width: 600px;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, transparent, black, transparent) 1;
+}
+
+.userData {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userData input {
+    padding: 1rem;
+    margin: 1rem 0 2.5rem 0;
+    height: 2rem;
+    border: 1px solid var(--main-color);
+}
+
+.userData label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.userData button {
+    width: 15rem;
+    height: 5rem;
+    border-radius: 5rem;
+    border: none;
+    background: var(--main-color);
+    font-size: 1.5rem;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: rgb(0, 75, 107);
+    transition: 1s;
+}
+
+.result {
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.descrition {
+    margin: 0 auto;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.chart {
+    display: flex;
+    margin: 0 auto;
+}
+
+.chart__imc,
+.chart__situation {
+    margin: 0 0.2rem 4rem 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.value {
+    width: 200px;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.light {
+    background-color: rgb(242, 242, 242);
+}
+.dark {
+    background-color: rgb(213, 213, 213);
+}
+
+.color0 {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.color1 {
+    background-color: rgb(171, 212, 222);
+}
+.color2 {
+    background-color: rgb(171, 222, 177);
+}
+.color3 {
+    background-color: rgb(220, 222, 171);
+}
+.color4 {
+    background-color: rgb(222, 197, 171);
+}
+.color5 {
+    background-color: rgb(221, 171, 171);
+}
+.color6 {
+    background-color: rgb(178, 163, 186);
+}
+
+@media screen and (max-width: 420px) {
+    .introduction h2 {
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .value {
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .introduction h2 {
+        max-width: 90%;
+    }
+
+    .value {
+        width: 150px;
+    }
+}

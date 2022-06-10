@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto"
+            rel="stylesheet"
+        />
+        <title>Cálculo de IMC</title>
+    </head>
+    <body>
+        <header>
+            <h1>Calculadora de IMC</h1>
+        </header>
+
+        <div class="container">
+            <div class="introduction">
+                <h2>
+                    IMC é a sigla para índice de massa corpórea, parâmetro
+                    adotado pela Organização Mundial de Saúde para calcular o
+                    peso ideal de cada pessoa.
+                </h2>
+            </div>
+
+            <div class="userData">
+                <label for="height">Informe a sua altura (em metros)</label>
+                <input
+                    type="number"
+                    name="height"
+                    id="height"
+                    placeholder="Ex: 1.75"
+                />
+                <label for="weight">Informe o seu peso (em kg)</label>
+                <input
+                    type="number"
+                    name="weight"
+                    id="weight"
+                    placeholder="Ex: 70"
+                />
+                <button onclick="calculate()" type="submit">Calcular</button>
+            </div>
+
+            <div class="result">
+                <p></p>
+            </div>
+            <div class="descrition">
+                <p></p>
+            </div>
+
+            <div class="chart">
+                <div class="chart__imc">
+                    <div class="value color0">IMC</div>
+                    <div class="value light">Abaixo de 18.5</div>
+                    <div class="value dark">18.5 - 24.9</div>
+                    <div class="value light">25 - 29.9</div>
+                    <div class="value dark">30 - 34.9</div>
+                    <div class="value light">35 - 39.9</div>
+                    <div class="value dark">Maior ou igual a 40</div>
+                </div>
+                <div class="chart__situation">
+                    <div class="value color0">Situação</div>
+                    <div class="value color1">Abaixo do peso</div>
+                    <div class="value color2">Peso ideal</div>
+                    <div class="value color3">Sobrepeso</div>
+                    <div class="value color4">Obesidade Grau I</div>
+                    <div class="value color5">Obesidade Grau II</div>
+                    <div class="value color6">Obesidade mórbida</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
